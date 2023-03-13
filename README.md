@@ -68,10 +68,12 @@ cd PseudoBulk-master
 </table>
 The peaks are in the format of "chr_start_end". <br>
 6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data
+
 ```bash
 python3 PseudoBulk.py
 ```
 7. Run PECA to construct regulatory network
+
 ```bash
 source PECA.sh RAd4 mm10
 ```
