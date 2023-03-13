@@ -1,6 +1,5 @@
 import numpy as np
 
-
 f = open('./data/Sample_scRNA.txt')
 data = f.readlines();f.close()
 del data[0]
