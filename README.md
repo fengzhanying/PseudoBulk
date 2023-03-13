@@ -1,13 +1,15 @@
 # PseudoBulk
 Pseudo-bulk stragety to merge scRNA-seq and scATAC-seq and construct regulatory network
 
-1. Download the script:
+1. Installation:
 ```bash
-wget https://github.com/fengzhanying/PseudoBulk/archive/master.zip
+wget https://github.com/fengzhanying/cRegulon/archive/master.zip
 unzip master.zip
-cd PseudoBulk-master
+cd cRegulon-master
+wget https://www.dropbox.com/s/0h1wxlu7iqheajo/cRegulon.tar.gz
+tar -xzvf cRegulon.tar.gz
+rm -rf Input Results
 ```
-3. Download this file: https://drive.google.com/file/d/1xBtb-grjgyqypuMlcmaGRsEgFZVgRlhy/view?usp=share_link
 4. Prepare scRNA-seq file in following format:
 <table>
   <tr>
@@ -70,6 +72,7 @@ The peaks are in the format of "chr_start_end". <br>
 6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data
 
 ```bash
+mkdir RAd4
 python3 PseudoBulk.py
 ```
 7. Run PECA to construct regulatory network
