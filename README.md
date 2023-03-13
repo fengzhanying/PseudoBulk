@@ -67,7 +67,7 @@ cd PseudoBulk-master
   </tr>
 </table>
 The peaks are in the format of "chr_start_end". <br>
-6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data:
+6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data
 ```bash
 python3 PseudoBulk.py
 ```
