@@ -69,14 +69,8 @@ rm -rf Input Results
   </tr>
 </table>
 The peaks are in the format of "chr_start_end". <br>
-6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data
+6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data & construct regulatory network
 
 ```bash
-mkdir RAd4
-python3 PseudoBulk.py
-```
-7. Run PECA to construct regulatory network
-
-```bash
-source PECA.sh RAd4 mm10
+source PS_PECA.sh RAd4 mm10
 ```
