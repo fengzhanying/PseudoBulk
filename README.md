@@ -6,9 +6,8 @@ Pseudo-bulk stragety to merge scRNA-seq and scATAC-seq and construct regulatory 
 wget https://github.com/fengzhanying/cRegulon/archive/master.zip
 unzip master.zip
 cd cRegulon-master
-wget https://www.dropbox.com/s/0h1wxlu7iqheajo/cRegulon.tar.gz
-tar -xzvf cRegulon.tar.gz
-rm -rf Input Results
+wget https://www.dropbox.com/s/911fqpuj939m7xr/PECA_scr.tar.gz
+tar -xzvf PECA_scr.tar.gz
 ```
 4. Prepare scRNA-seq file in following format:
 <table>
@@ -72,5 +71,5 @@ The peaks are in the format of "chr_start_end". <br>
 6. Merge all the cells to make pseudo RNA-seq and ATAC-seq data & construct regulatory network
 
 ```bash
-source PS_PECA.sh RAd4 mm10
+source PSPECA.sh RAd4 mm10
 ```
